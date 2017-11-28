@@ -25,18 +25,12 @@ TARGET_LIBINIT_MSM8974_DEFINES_FILE := device/samsung/hlte/init/init_hlte.cpp
 # Kernel
 TARGET_KERNEL_CONFIG := lineage_hlte_bcm2079x_defconfig
 
-# NFC
-BOARD_NFC_HAL_SUFFIX := $(TARGET_BOARD_PLATFORM)
-
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 11534336
 BOARD_CACHEIMAGE_PARTITION_SIZE := 314572800
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 13631488
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1572864000
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 28651290624
-
-# Releasetools
-TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/hlte-common/releasetools
 
 # inherit from the proprietary version
 -include vendor/samsung/hlte/BoardConfigVendor.mk
